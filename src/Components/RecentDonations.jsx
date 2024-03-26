@@ -4,7 +4,7 @@ const RecentDonations = ({donations}) => {
   
   const listInfo = donations.map(info => {
     return (
-      <DonationInfo
+      <DonationInfo key={info.id}
       name = {info.name}
       amount = {info.amount}
       caption = {info.caption}
