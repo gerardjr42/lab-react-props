@@ -1,8 +1,8 @@
-const Progress = ({currentRaised, goal}) => {
+const Progress = ({currentAmount, targetAmount}) => {
   return (
     <section className="progress">
       <h2>
-        Raised <span className="secondary">$0{currentRaised}</span> of <span className="secondary">$1000{goal}</span>
+        Raised <span className="secondary">{currentAmount}</span> of <span className="secondary">{targetAmount}</span>
       </h2>
     </section>
   )
