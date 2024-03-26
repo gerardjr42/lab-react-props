@@ -1,9 +1,10 @@
 //Need a prop for name, caption, and amount inputs
-const DonationForm = ({updatedDonationPosition}) => {
+const DonationForm = ({donations}) => {
+  const updatedDonationPosition = donations.length + 1;
   return (
     <section className="donation-form">
-      <h3>You could be donation 
-        <span className="secondary"> #1{updatedDonationPosition}!</span>
+      <h3>You could be donation
+        <span className="secondary"> #{updatedDonationPosition}!</span>
       </h3>
       <form>
         <label htmlFor="name">Name</label>
