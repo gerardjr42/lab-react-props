@@ -15,7 +15,7 @@ const RecentDonations = ({donations}) => {
   return (
     <section>
       <h2>Recent Donations</h2>
-      <ul>{listInfo}</ul>
+      <ul className="p-0 list-none">{listInfo}</ul>
     </section>
   )
 }
